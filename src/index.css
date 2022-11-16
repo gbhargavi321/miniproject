@@ -1,0 +1,153 @@
+
+
+:root{
+  --color-code:#d51739;
+}
+
+.contain{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  }
+
+.banner{
+  width: 65%;
+background: var(--color-code);
+border-bottom-right-radius: 580px;
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction: column;
+height: 100%;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.banner-content h1{
+  margin: 0;
+}
+
+.banner-content button{
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 8px 30px;
+  color: white;
+  font-weight: 600;
+}
+.banner-content button:hover{
+  color:var(--color-code);
+  background: white;
+}
+
+.banner-logo img{
+  width: 330px;
+height: 100%;
+}
+
+.form-container{
+  width: 35%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;    
+}
+.form-container .form-content h2{
+  text-align: center;
+}
+.form-container .form-content{
+  width: 100%;
+  margin: 100px 20px ;
+}
+.form-content form{
+  display: flex;
+flex-direction: column;
+}
+
+.form-content form .formControl{
+  height: 45px;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.form-content form label{
+  margin: 0 10px;
+  color: gray;
+}
+.form-content form input{
+  border: none;
+  width: 100%;
+  
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.form-content .btns{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.btns button{
+  padding: 8px 40px;
+  border-radius: 30px;
+  border: navajowhite;
+  font-weight: bold;
+  color: white;
+  background: var(--color-code);
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.btns button:hover{
+  background: #f5254b;;
+}
+.btns span:hover a{
+  color: var(--color-code);
+}
+
+.banner1{
+  width: 65%;
+  background: var(--color-code);
+  border-bottom-left-radius: 580px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media screen and (max-width:900px) {
+  .banner{
+      display: none;
+  }
+  .banner1{
+    display: none;
+  }
+  .form-container{
+      width: 100%;
+  }
+  .form-content{
+      border-radius: 0.5rem;
+      border-top: var(--color-code) 0.5rem solid;
+      border-left: var(--color-code) 1px solid;
+      border-right: var(--color-code) 1px solid;
+      border-bottom: var(--color-code) 0.5em solid;
+      padding: 28px;
+      height: 450px;
+  }
+}
+
+  a {
+    text-decoration: none;
+    color: black;
+  }

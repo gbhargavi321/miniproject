@@ -1,0 +1,9 @@
+@media screen and (max-width:900px){
+    .center{
+        margin-left: 15px;
+
+    }
+    .makeStyles-mapContainer-16{
+        height: 65vh !important;
+    }
+}
